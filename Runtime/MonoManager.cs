@@ -15,7 +15,7 @@ namespace Becs
         {
             get
             {
-                if (_pool == null) throw new InvalidOperationException("You need to call InitPool before using it.");
+                if (_pool == null) throw new InvalidOperationException("You need to call InitPool before using it."); //  
                 return _pool;
             }
             set => _pool = value;
@@ -96,7 +96,7 @@ namespace Becs
         public void ClearUnits()
         {
             int unitCount = GetCount();
-            for (int i = unitCount-1; i >= 0; i--)
+            for (int i = unitCount - 1; i >= 0; i--)
             {
                 RemoveUnit(_units[i]);
             }
