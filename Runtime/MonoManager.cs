@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Pool;
 
@@ -15,7 +14,11 @@ namespace Becs
         {
             get
             {
-                if (_pool == null) throw new InvalidOperationException("You need to call InitPool before using it."); //  
+                if (_pool == null)
+                {
+                    InitPool();
+                }
+                
                 return _pool;
             }
             set => _pool = value;
