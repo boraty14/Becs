@@ -1,0 +1,11 @@
+﻿{
+  "name": "com.braty.becs",
+  "version": "1.0.0",
+  "displayName": "Becs",
+  "description": "Very Simple ECS like framework for MonoBehaviours, best used with DI, not required though.",
+  "unity": "2022.1",
+  "author": {
+    "name": "Bora Ataysen",
+    "url": "https://github.com/boraty14"
+  }
+}
